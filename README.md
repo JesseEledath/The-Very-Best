@@ -61,7 +61,7 @@ https://wireframe.cc/bydHV9
 ![Time and importance graph](https://github.com/Rehack65/The-Very-Best/blob/main/priority.png?raw=true)
 
 ## Timeframes
-
+```
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Creating Structure | H | 4hrs| |
@@ -70,7 +70,7 @@ https://wireframe.cc/bydHV9
 | Debugging | H | 4hrs| |
 | Post MVP + Research | H | 7hrs| |
 | Total | H | 34hrs| |
-
+```
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
