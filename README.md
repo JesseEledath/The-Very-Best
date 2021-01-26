@@ -2,7 +2,7 @@
 
 ## Project Description
 
-I will attempt to make a rock paper scissors game using pokemone types, but you're shown what the oponent will chose.
+The-Very-Best is a rock paper scissors game using pokemone types, but you're shown what the oponent will chose.
 
 ## API and Data Sample
 
@@ -34,17 +34,18 @@ https://wireframe.cc/bydHV9
 
 #### MVP 
 
-- Have user input for player name displayed. 
-- Have randomly selected opposing pokemon's image rendered and data + typing data pulled from API. 
-- Have user select a pokemon and pull that Type information and render the corresponding image.
-- Have a comparison between type data of user selcted pokemon and opposing pokemon.
-- Keep track of and display amount of wins and losses based on comparision outcomes.
+- Display user name from user input. 
+- Randomly generate opposing pokemon. 
+- User select a pokemon to battle opposing pokemon.
+- Display winner based on pokemon type comparison.
+
 
 #### PostMVP  
 
 - Add some background battle music.
-- Add/change text to explain why they lost or won due to their pokemon selction.
+- Display pokemon win/loss condtions for this match.
 - Add dynamic health-bars to the pokemon to indicate which one one and loss by depletion.
+- Keep track of and display amount of wins and losses based on comparision outcomes.
 
 ## Project Schedule
 |  Day | Deliverable | Status
@@ -61,16 +62,24 @@ https://wireframe.cc/bydHV9
 ![Time and importance graph](https://github.com/Rehack65/The-Very-Best/blob/main/priority.png?raw=true)
 
 ## Timeframes
-```
-| Component | Priority | Estimated Time | Actual Time |
+
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Creating Structure | H | 4hrs| |
-| Core Aplacation | H | 15hrs| |
-| Working with API | H | 4hrs| |
+| Boilerplate HTML and CSS | H | 2hrs| |
+| Take user input and display name | H | 3hrs| |
+| Take user input to select pokemon | H | 3hrs| |
+| Randomly generate opposing pokemon | H | 3hrs| |
+| Display/layout pokemon sprites | H | 3hrs| |
+| Get type match up data for each pokemon | H | 3hrs| |
+| Create win conditions for battle | H | 3hrs| |
+| Display winner from battle | H | 3hrs| |
+| Request API (for each pokemon) to get name and sprite data | H | 3hrs| |
+| Request API (for each pokemon) to get type match up data | H | 3hrs| |
+| Background and format styling | H | 3hrs| |
 | Debugging | H | 4hrs| |
 | Post MVP + Research | H | 7hrs| |
 | Total | H | 34hrs| |
-```
+
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
