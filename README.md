@@ -7,8 +7,9 @@ I will attempt to make a rock paper scissors game using pokemone types, but you'
 ## API and Data Sample
 
 Using 2 endpoints of the PokemonAPI, the [types](https://pokeapi.co/docs/v2#types) and [pokemon](https://pokeapi.co/docs/v2#pokemon) ones.
+```
 
- ` "id": 5,
+  "id": 5,
    "name": "ground",
     "damage_relations": {
      "no_damage_to": [
@@ -22,8 +23,9 @@ Using 2 endpoints of the PokemonAPI, the [types](https://pokeapi.co/docs/v2#type
          "name": "bug",
         "url": "https://pokeapi.co/api/v2/type/7/"
       }
-   ],`
+   ]`
 
+```
 ## Wireframes
 
 https://wireframe.cc/bydHV9 
