@@ -33,28 +33,24 @@ https://wireframe.cc/bydHV9
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
 
-- Have enterable Player name 
-- Render image and text data from API 
-- User input to determine outcome of match
-- Score tracker
+- Have user input for player name displayed. 
+- Have randomly selected opposing pokemon's image rendered and data + typing data pulled from API. 
+- Have user select a pokemon and pull that Type information and render the corresponding image.
+- Have a comparison between type data of user selcted pokemon and opposing pokemon.
+- Keep track of and display amount of wins and losses based on comparision outcomes.
 
 #### PostMVP  
 *These are examples only. Replace with your own Post-MVP features.*
 
-- Add some music
-- Change text to explain why they lost.
-- Add dynamic health-bars
+- Add some background battle music.
+- Add/change text to explain why they lost or won due to their pokemon selction.
+- Add dynamic health-bars to the pokemon to indicate which one one and loss by depletion.
 
 ## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
 |Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|Jan 26| Project Approval | Incomplete
+|Jan 26| Project Approval and PseudoCoding | Incomplete
 |Jan 27| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Jan 28| Initial Clickable Model  | Incomplete
 |Jan 29| MVP | Incomplete
@@ -66,15 +62,14 @@ Include a full list of features that have been prioritized based on the `Time an
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Creating Structure | H | 4hrs| |
+| Core Aplacation | H | 15hrs| |
+| Working with API | H | 4hrs| |
+| Debugging | H | 4hrs| |
+| Post MVP + Research | H | 7hrs| |
+| Total | H | 34hrs| |
 
 ## Code Snippet
 
