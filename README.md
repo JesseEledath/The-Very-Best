@@ -31,7 +31,6 @@ https://wireframe.cc/bydHV9
 ![WireFrame for Mobile Design](https://i.imgur.com/CABXdcO.png)
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
 - Have user input for player name displayed. 
 - Have randomly selected opposing pokemon's image rendered and data + typing data pulled from API. 
@@ -40,7 +39,6 @@ https://wireframe.cc/bydHV9
 - Keep track of and display amount of wins and losses based on comparision outcomes.
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
 - Add some background battle music.
 - Add/change text to explain why they lost or won due to their pokemon selction.
