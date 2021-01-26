@@ -63,8 +63,8 @@ https://wireframe.cc/bydHV9
 
 ## Timeframes
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
+| Component | Priority | Estimated Time | Actual Time |
+| --- | :---: |  :---: | :---: |
 | Boilerplate HTML and CSS | H | 2hrs| |
 | Take user input and display name | H | 3hrs| |
 | Take user input to select pokemon | H | 3hrs| |
