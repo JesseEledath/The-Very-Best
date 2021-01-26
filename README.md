@@ -56,7 +56,7 @@ https://wireframe.cc/bydHV9
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+![Time and importance graph](https://github.com/Rehack65/The-Very-Best/blob/main/priority.png?raw=true)
 
 ## Timeframes
 
