@@ -50,8 +50,8 @@ https://wireframe.cc/bydHV9
 ## Project Schedule
 |  Day | Deliverable | Status
 |---|---| ---|
-|Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|Jan 26| Project Approval and PseudoCoding | Incomplete
+|Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Completed
+|Jan 26| Project Approval and PseudoCoding | Completed
 |Jan 27| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Jan 28| Initial Clickable Model  | Incomplete
 |Jan 29| MVP | Incomplete
@@ -63,9 +63,9 @@ https://wireframe.cc/bydHV9
 
 ## Timeframes
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Boilerplate HTML and CSS | H | 2hrs| |
+| Component | Priority | Estimated Time | Actual Time |
+| --- | :---: |  :---: | :---: |
+| Boilerplate HTML and CSS | H | 2hrs| 1hr |
 | Take user input and display name | H | 3hrs| |
 | Take user input to select pokemon | H | 3hrs| |
 | Randomly generate opposing pokemon | H | 3hrs| |
