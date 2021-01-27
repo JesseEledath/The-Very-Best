@@ -1,7 +1,24 @@
 body {
   background-color: #214A84;
+  z-index: -3;
 }
 /* For phones */
 @media only screen and (max-width: 600px) {
-
+}
+#background {
+  width: 100%;
+  padding: 0px 0px 10px 0px;
+  margin: 0px;
+  height: 47%;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.author{
+ bottom: 0px;
+ margin-bottom: 4px;
+ margin-left: 0px;
+ position: fixed;
 }
