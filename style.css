@@ -26,3 +26,6 @@ body {
   display: flex;
   text-align: justify;
 }
+#user-pokemon-name{
+  display: none;
+}
