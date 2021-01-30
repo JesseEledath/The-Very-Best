@@ -18,10 +18,10 @@ async function randomPokemon(num) {
     let opposingNameData = opposingPokeData.data.name
     let opposingSpriteData = opposingPokeData.data.sprites.front_default
     let opposingTypeData = opposingPokeData.data.types[0].type.name
-    // console.log(opposingPokeData);
+    // console.log(opposingNameData);
     // console.log(opposingSpriteData);
-    let opposingName = document.getElementsByClassName('opposing-pokemon-name');
-    opposingName.p = opposingNameData
+    let opposingPokemonName = document.getElementsByClassName('opposing-pokemon-name');
+    opposingPokemonName = opposingNameData
     let opposingSprite = document.getElementById('opposing-pokemon-sprite');
     opposingSprite.src = opposingSpriteData
     return opposingTypeData
