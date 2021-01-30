@@ -32,7 +32,7 @@ let pokemonSubmit = document.getElementById('user-pokemon-name')
 pokemonSubmit.addEventListener("submit", function (e) {
   e.preventDefault();
   let pokemonNameInput = document.getElementById('user-pokemon').value
-  UserPokemon(pokemonNameInput)
+  UserPokemon(pokemonNameInput.toLowerCase())
 });
 
 async function UserPokemon(input) {
