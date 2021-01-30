@@ -2,11 +2,13 @@ let nameSubmit = document.getElementById('user-name')
 // console.log(nameSubmit);
 nameSubmit.addEventListener("submit", function (e) {
   e.preventDefault();
+  let userName = document.getElementById('name').value
   document.getElementById('user-name').style.display = "none"
   document.getElementById('user-pokemon-name').style.display = "block"
-  // https://stackoverflow.com/questions/11226489/show-hide-forms-using-buttons-and-javascript
+  let battleText = document.getElementById('battle-text1')
+  battleText.innerText = `Welcome ${userName}. Team rocket has stolen all Pokemon's second typing!` 
+// https://stackoverflow.com/questions/11226489/show-hide-forms-using-buttons-and-javascript
 });
-
 // Api call(math.random 1118 total) to get opposing pokemon sprite, and set a varible of the type
 // appened and display opposing sprite
 async function randomPokemon(num) {
@@ -23,7 +25,8 @@ async function randomPokemon(num) {
     opposingSprite.src = opposingSpriteData
     return opposingTypeData
   } catch (err) {
-    alert(err, 'Try spell-checking your pokemon');
+    console.log(err);
+    alert('Try spell-checking your pokemon');
   }
 }
 randomPokemon(Math.floor(Math.random() * 898) + 1)
@@ -47,6 +50,7 @@ async function UserPokemon(input) {
     userSprite.src = userSpriteData
     return userTypeData
   } catch (err) {
-    alert(err, 'Try spell-checking your pokemon');
+    console.log(err);
+    alert('Try spell-checking your pokemon');
   }
 }

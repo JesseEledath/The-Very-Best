@@ -24,10 +24,15 @@ body {
  margin-bottom: 4px;
  position: absolute;
 }
-.bottom-half{
-  display: flex;
-  text-align: justify;
+.bottom-box{
+bottom: 50%;
 }
 #user-pokemon-name{
   display: none;
+}
+#opposing-pokemon-sprite{
+  right: 15%;
+  position: absolute;
+  top: 9%;
+  height: 15%;
 }
