@@ -15,13 +15,34 @@ pokemonSubmit.addEventListener("submit", function (e) {
 async function randomPokemon(num) {
   try {
     const opposingPokeData = await axios.get(`https://pokeapi.co/api/v2/pokemon/${num}/`)
-    let opposingName = opposingPokeData.data.name
-    let opposingSprite = opposingPokeData.data.sprites.front_default
-    let opposingType = opposingPokeData.data.types[0].type.name
-    console.log(opposingPokeData);
-    console.log(opposingSprite);
+    let opposingNameData = opposingPokeData.data.name
+    let opposingSpriteData = opposingPokeData.data.sprites.front_default
+    let opposingTypeData = opposingPokeData.data.types[0].type.name
+    // console.log(opposingPokeData);
+    // console.log(opposingSpriteData);
+    let opposingName = document.getElementsByClassName('opposing-pokemon-name');
+    opposingName.p = opposingNameData
+    let opposingSprite = document.getElementById('opposing-pokemon-sprite');
+    opposingSprite.src = opposingSpriteData
+    return opposingTypeData
   } catch (err) {
-    console.error(err);
+    alert(err, 'Try spell-checking your pokemon');
   }
 }
 randomPokemon(Math.floor(Math.random() * 898) + 1)
+
+async function UserPokemon(input) {
+  try {
+    const userPokeData = await axios.get(`https://pokeapi.co/api/v2/pokemon/${input}/`)
+    let userNameData = userPokeData.data.name
+    let userSpriteData = userPokeData.data.sprites.back_default
+    let userTypeData = userPokeData.data.types[0].type.url
+    let userPokemonName = document.getElementsByClassName('user-pokemon-name');
+    userPokemonName.p = userNameData
+    let userSprite = document.getElementById('user-pokemon-sprite')
+    userSprite.src = userSpriteData
+    return userTypeData
+  } catch (err) {
+    alert(err, 'Try spell-checking your pokemon');
+  }
+}
