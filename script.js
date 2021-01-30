@@ -19,18 +19,19 @@ async function randomPokemon(num) {
     let opposingTypeData = opposingPokeData.data.types[0].type.name
     // console.log(opposingNameData);
     // console.log(opposingSpriteData);
-    let opposingPokemonName = document.getElementsByClassName('opposing-pokemon-name');
-    opposingPokemonName = opposingNameData
+    let opposingPokemonName = document.getElementById('opposing-pokemon-name');
+    opposingPokemonName.append(opposingNameData.charAt(0).toUpperCase() + opposingNameData.slice(1))
+    opposingPokemonName.append(` ${opposingTypeData}` + ' type')
     let opposingSprite = document.getElementById('opposing-pokemon-sprite');
     opposingSprite.src = opposingSpriteData
-    return opposingTypeData
+
   } catch (err) {
     console.log(err);
     alert('Try spell-checking your pokemon');
   }
 }
 randomPokemon(Math.floor(Math.random() * 898) + 1)
-
+// console.log(opposingTypeData);
 let pokemonSubmit = document.getElementById('user-pokemon-name')
 pokemonSubmit.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -41,14 +42,35 @@ pokemonSubmit.addEventListener("submit", function (e) {
 async function UserPokemon(input) {
   try {
     const userPokeData = await axios.get(`https://pokeapi.co/api/v2/pokemon/${input}/`)
-    let userNameData = userPokeData.data.name
+    let userNameData = input.charAt(0).toUpperCase() + input.slice(1)
     let userSpriteData = userPokeData.data.sprites.back_default
     let userTypeData = userPokeData.data.types[0].type.url
     let userPokemonName = document.getElementsByClassName('user-pokemon-name');
-    userPokemonName.p = userNameData
+    // userPokemonName.p = userNameData
     let userSprite = document.getElementById('user-pokemon-sprite')
     userSprite.src = userSpriteData
-    return userTypeData
+    async function Compare() {
+     try {
+       const typeTable = await axios.get(`${userTypeData}`)
+       let winCondition = typeTable.data.damage_relations.double_damage_to
+      //  console.log(winCondition);
+      let opposingPokemonName = document.getElementById('opposing-pokemon-name').innerText;
+      let opposingPokeType = opposingPokemonName.split(" ")[1]
+       winCondition.forEach(e => {
+         if (e.name === opposingPokeType) {
+           alert("You\'ve Won!")
+           return
+         } else {
+           alert("You\'ve Lost")
+           return
+         }
+       });
+     } catch (err) {
+       console.log(err);
+     }
+    }
+    Compare()
+    
   } catch (err) {
     console.log(err);
     alert('Try spell-checking your pokemon');
