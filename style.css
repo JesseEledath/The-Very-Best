@@ -1,6 +1,8 @@
 body {
   background-color: #214A84;
   z-index: -3;
+  display: inline-flex;
+  flex-flow: row wrap;
 }
 /* For phones */
 @media only screen and (max-width: 600px) {
@@ -17,10 +19,10 @@ body {
   z-index: -1;
 }
 .author{
- bottom: 0px;
+ bottom: 0;
+ left: 0;
  margin-bottom: 4px;
- margin-left: 0px;
- position: fixed;
+ position: absolute;
 }
 .bottom-half{
   display: flex;

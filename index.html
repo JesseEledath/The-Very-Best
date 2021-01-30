@@ -1,16 +1,18 @@
 <!DOCTYPE html>
+
 <head>
   <html lang="en">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js" defer></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <title>The Very Best</title>
 </head>
 
 <body>
-<div class="top-half">
-  <img id="background" src="./Pokemon Battle Background.png" alt="battle background">
+  <div class="top-half">
+    <img id="background" src="./Pokemon Battle Background.png" alt="battle background">
     <div class="opposing-pokemon-name">
       <p></p>
     </div>
@@ -18,28 +20,28 @@
       <p></p>
     </div>
     <div>
-    <img id="opposing-pokemon-sprite" src="" alt="opposing-pokemon front sprite">
-    <img id="user-pokemon-sprite" src="" alt="user-pokemon back sprite">
-</div>
-<div class="bottom-half">
-  <div class="bottom-box">
-    <p class="battle-text">
-    </p>
-    <form id="user-name">
-      <label for="name">What is your name?</label>
-      <input type="text" id="name">
-      <input type="submit" class="submit" value="Enter">
-    </form>
-    <form id="user-pokemon-name">
-      <label for="name">Who would you choose?</label>
-      <input type="text" id="user-pokemon">
-      <input type="submit" class="submit" value="Enter">
-    </form>
-  </div>
-  <footer>
-    <p class="author">Created by Jesse Eledath</p>
-  </footer>
-</div>
+      <img id="opposing-pokemon-sprite" src="" alt="opposing-pokemon front sprite">
+      <img id="user-pokemon-sprite" src="" alt="user-pokemon back sprite">
+    </div>
+    <div class="bottom-half">
+      <div class="bottom-box">
+        <p class="battle-text">
+        </p>
+        <form id="user-name">
+          <label for="name">What is your name?</label>
+          <input type="text" id="name">
+          <input type="submit" class="submit" value="Enter">
+        </form>
+        <form id="user-pokemon-name">
+          <label for="name">Who would you choose?</label>
+          <input type="text" id="user-pokemon">
+          <input type="submit" class="submit" value="Enter">
+        </form>
+      </div>
+      <footer>
+        <p class="author">Created by Jesse Eledath</p>
+      </footer>
+    </div>
 </body>
 
 </html>
