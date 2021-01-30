@@ -6,10 +6,7 @@ nameSubmit.addEventListener("submit", function (e) {
   document.getElementById('user-pokemon-name').style.display = "block"
   // https://stackoverflow.com/questions/11226489/show-hide-forms-using-buttons-and-javascript
 });
-let pokemonSubmit = document.getElementById('user-pokemon-name')
-pokemonSubmit.addEventListener("submit", function (e) {
-  e.preventDefault();
-});
+
 // Api call(math.random 1118 total) to get opposing pokemon sprite, and set a varible of the type
 // appened and display opposing sprite
 async function randomPokemon(num) {
@@ -30,6 +27,13 @@ async function randomPokemon(num) {
   }
 }
 randomPokemon(Math.floor(Math.random() * 898) + 1)
+
+let pokemonSubmit = document.getElementById('user-pokemon-name')
+pokemonSubmit.addEventListener("submit", function (e) {
+  e.preventDefault();
+  let pokemonNameInput = document.getElementById('user-pokemon').value
+  UserPokemon(pokemonNameInput)
+});
 
 async function UserPokemon(input) {
   try {
