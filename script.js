@@ -56,15 +56,18 @@ async function UserPokemon(input) {
       //  console.log(winCondition);
       let opposingPokemonName = document.getElementById('opposing-pokemon-name').innerText;
       let opposingPokeType = opposingPokemonName.split(" ")[1]
-       winCondition.forEach(e => {
-         if (e.name === opposingPokeType) {
-           alert("You\'ve Won!")
+       for (let i = 0; i <= winCondition.length; i++) {
+         let WinIndex = winCondition[i];
+         if (WinIndex.name === opposingPokeType) {
+           alert('You\'ve Won!')
            return
-         } else {
-           alert("You\'ve Lost")
+         } else if (i = winCondition.length) {
+           alert('You\'ve lost...')
            return
+         } else { 
+           console.log('else');
          }
-       });
+       }
      } catch (err) {
        console.log(err);
      }
