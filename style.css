@@ -30,6 +30,9 @@ bottom: 50%;
 #user-pokemon-name{
   display: none;
 }
+#user-pokemon-sprite{
+  display: none;
+}
 #opposing-pokemon-sprite{
   right: 15%;
   position: absolute;

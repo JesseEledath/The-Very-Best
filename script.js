@@ -37,6 +37,7 @@ pokemonSubmit.addEventListener("submit", function (e) {
   e.preventDefault();
   let pokemonNameInput = document.getElementById('user-pokemon').value
   UserPokemon(pokemonNameInput.toLowerCase())
+  document.getElementById('user-pokemon-sprite').style.display = "block"
 });
 
 async function UserPokemon(input) {
@@ -61,15 +62,11 @@ async function UserPokemon(input) {
          if (WinIndex.name === opposingPokeType) {
            alert('You\'ve Won!')
            return
-         } else if (i = winCondition.length) {
-           alert('You\'ve lost...')
-           return
-         } else { 
-           console.log('else');
-         }
+         } 
        }
      } catch (err) {
-       console.log(err);
+       console.log(err)
+         alert('You\'ve lost...');
      }
     }
     Compare()
