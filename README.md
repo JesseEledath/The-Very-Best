@@ -97,3 +97,4 @@ nameSubmit.addEventListener("submit", function (e) {
 ```
 ## Change Log
  
+Adding the textbox with the opposing Pokemon's name and type was a necessary evil, to un-scope-lock type information.
