@@ -6,9 +6,6 @@ body {
   font-family: 'Londrina Solid', cursive;
   font-size: 25px;
 }
-/* For phones */
-@media only screen and (max-width: 600px) {
-}
 #background {
   width: 100%;
   padding: 0px 0px 10px 0px;
@@ -31,9 +28,12 @@ display: flex;
 flex-flow: column wrap;
 position: absolute;
 bottom: 40%;
+justify-content: flex-start;
+align-content: space-between;
 }
 .form{
-align-items: flex-end;
+  display: flex;
+  align-content: space-between;
 }
 #user-pokemon-name{
   display: none;
@@ -59,7 +59,15 @@ align-items: flex-end;
   top: 9%;
   border: 3px #063023 solid;
   padding: 1.5px;
-  background-color: #8D96BC;
+  background-color: #118ab2;
+}
+#replay-button{
+  display: flex;
+  align-content: space-between;
+  margin: 10px;
+}
+#replay-button{
+  display: none;
 }
 @media only screen and (max-width: 551px){
   .bottom-box{

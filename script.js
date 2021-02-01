@@ -39,9 +39,15 @@ pokemonSubmit.addEventListener("submit", function (e) {
   e.preventDefault();
   let pokemonNameInput = document.getElementById('user-pokemon').value
   UserPokemon(pokemonNameInput.toLowerCase())
+  document.getElementById('replay-button').style.display = "block"
   document.getElementById('user-pokemon-sprite').style.display = "block"
 });
-
+// Adding the last event listener to replay the game
+let replayButton = document.getElementById('replay-button')
+replayButton.addEventListener('click', function (e) {
+  document.getElementById('opposing-pokemon-name').innerText = ''
+  randomPokemon(Math.floor(Math.random() * 898) + 1)
+})
 async function UserPokemon(input) {
   try {
     const userPokeData = await axios.get(`https://pokeapi.co/api/v2/pokemon/${input}/`)
@@ -62,13 +68,13 @@ async function UserPokemon(input) {
         for (let i = 0; i <= winCondition.length; i++) {
           let WinIndex = winCondition[i];
           if (WinIndex.name === opposingPokeType) {
-             setTimeout(() => {  alert('You\'ve Won!'); }, 800)
+             setTimeout(() => {  alert('You\'ve Won!'); }, 600)
             return;
           }
         }
       } catch (err) {
         console.log(err)
-        setTimeout(() => { alert('You\'ve lost...'); }, 800)
+        setTimeout(() => { alert('You\'ve lost...'); }, 600)
         return;
       }
     }
