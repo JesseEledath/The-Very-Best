@@ -1,4 +1,5 @@
 # The-Very-Best.
+[Deployed](https://rehack65.github.io/The-Very-Best/.)
 
 ## Project Description
 
@@ -92,9 +93,7 @@ nameSubmit.addEventListener("submit", function (e) {
   document.getElementById('user-name').style.display = "none"
   document.getElementById('user-pokemon-name').style.display = "block"
   let battleText = document.getElementById('battle-text1')
-  battleText.innerText = `Welcome ${userName}. Team rocket has stolen all Pokemon's second typing!`
-});`
-```
+  battleText.innerText = a
 ## Change Log
  
 Adding the textbox with the opposing Pokemon's name and type was a necessary evil, to un-scope-lock type information.

@@ -71,13 +71,13 @@ async function UserPokemon(input) {
         for (let i = 0; i <= winCondition.length; i++) {
           let WinIndex = winCondition[i];
           if (WinIndex.name === opposingPokeType) {
-             setTimeout(() => {  alert('You\'ve Won!'); }, 600)
+             setTimeout(() => {  alert('You\'ve Won!'); }, 400)
             return;
           }
         }
       } catch (err) {
         console.log(err)
-        setTimeout(() => { alert('You\'ve lost...'); }, 600)
+        setTimeout(() => { alert('You\'ve lost...'); }, 400)
         return;
       }
     }
