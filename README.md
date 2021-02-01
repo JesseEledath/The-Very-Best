@@ -56,7 +56,7 @@ https://wireframe.cc/bydHV9
 |Jan 27| Core Application Structure (HTML, CSS, etc.) | Completed
 |Jan 29| Initial Clickable Model  | Completed
 |Jan 30| MVP | Completed
-|Feb 1| Presentations/Project Submission | Incomplete
+|Feb 1| Project Submission | Completed
 
 ## Priority Matrix
 
