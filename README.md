@@ -1,5 +1,5 @@
 # The-Very-Best.
-[Deployed](https://rehack65.github.io/The-Very-Best/.)
+[Deployed](https://jesseeledath.github.io/The-Very-Best/)
 
 ## Project Description
 
